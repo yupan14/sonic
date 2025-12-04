@@ -118,8 +118,17 @@ var (
 	// Note: it does not check for the invalid UTF-8 characters.
 	Valid = encoder.Valid
 
-	// NewStreamEncoder adapts to encoding/json.NewDecoder API.
-	//
-	// NewStreamEncoder returns a new encoder that write to w.
-	NewStreamEncoder = encoder.NewStreamEncoder
+    // NewStreamEncoder adapts to encoding/json.NewDecoder API.
+    //
+    // NewStreamEncoder returns a new encoder that write to w.
+    NewStreamEncoder = encoder.NewStreamEncoder
+    
+    // Enable JIT mode in encoder.
+    ForceUseJit = encoder.ForceUseJit
+    
+    // Enable VM mode in encoder.
+    ForceUseVM = encoder.ForceUseVM
+   
+    // Get UseVM flag.   
+    GetUseVM = encoder.GetUseVM
 )
