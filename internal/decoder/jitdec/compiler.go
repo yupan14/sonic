@@ -17,6 +17,7 @@
 package jitdec
 
 import (
+	"encoding/json"
 	"fmt"
 	"reflect"
 	"sort"
